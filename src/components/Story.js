@@ -1,8 +1,26 @@
 import React from "react";
+import styled from "styled-components";
+
+const Entry = styled.article`
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-column-gap: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px dotted #00000033;
+  a {
+    color: #007eb6;
+    text-decoration: none;
+  }
+  h3 + p {
+    margin-top: 0;
+  }
+  img {
+  }
+`;
 
 const Story = (props) => {
   return (
-    <div className="entry">
+    <Entry>
       <img
         src={
           props.story.multimedia
@@ -17,7 +35,7 @@ const Story = (props) => {
         </h3>
         <p>{props.story.abstract}</p>
       </div>
-    </div>
+    </Entry>
   );
 };
 

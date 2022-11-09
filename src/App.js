@@ -5,11 +5,11 @@ import Stories from "./components/Stories";
 import { fetchStoriesFromLocalStorage, fetchStoriesFromNYTimes } from "./api";
 
 const navItems = ["arts", "books", "fashion", "food", "movies", "travel"];
-const section = "travel";
 
 function App() {
   const [stories, setStories] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
+  const [section, setSection] = React.useState("arts");
 
   React.useEffect(() => {
     setLoading(true);
@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <Header siteTitle="All the News that Fits We Print" />
-      <Nav navItems={navItems} />
+      <Nav navItems={navItems} setSection={setSection} />
       <Stories stories={stories} />
     </>
   );

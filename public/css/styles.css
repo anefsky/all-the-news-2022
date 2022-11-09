@@ -115,23 +115,6 @@ li.logo img {
   height: 2.5rem;
 }
 
-.entry {
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  grid-column-gap: 1rem;
-  margin-bottom: 1rem;
-  grid-area: "entry";
-}
-
-.entry a {
-  color: #007eb6;
-  text-decoration: none;
-}
-
-.entry h3 + p {
-  margin-top: 0;
-}
-
 .section-head {
   font-family: Lobster;
   color: #007eb6;
