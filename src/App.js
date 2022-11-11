@@ -25,8 +25,10 @@ function App() {
   React.useEffect(() => {
     setLoading(true);
     if (!localStorage.getItem(section)) {
+      console.log('**** api call');
       fetchStoriesFromNYTimes(section, setStories);
     } else {
+      console.log('**** from local storage');
       fetchStoriesFromLocalStorage(section, setStories);
     }
     setLoading(false);
