@@ -7,7 +7,11 @@ const NavItem = (props) => {
 
   return (
     <li>
-      <a href={`#${props.navItem}`} onClick={() => sendSection(props.navItem)}>
+      <a
+        className={props.navItem === props.section ? "active" : ""}
+        href={`#${props.navItem}`}
+        onClick={() => sendSection(props.navItem)}
+      >
         {props.navItem}
       </a>
     </li>

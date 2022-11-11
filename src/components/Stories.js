@@ -1,10 +1,11 @@
 import React from "react";
-import Story from "./Story";
+import Story from "./story";
 
-const Stories = (props) => {
+const Stories = ({ stories, section }) => {
   return (
     <div className="site-wrap">
-      {props.stories.map((story, index) => (
+      <h2 className="section-head">{section}</h2>
+      {stories.map((story, index) => (
         <Story key={index} story={story} />
       ))}
     </div>
