@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./components/header";
-import Nav from "./components/nav/";
-import Stories from "./components/stories";
-import { fetchStoriesFromLocalStorage, fetchStoriesFromNYTimes } from "./api";
+import Header from "../header";
+import Nav from "../nav/";
+import Stories from "../stories";
+import { fetchStoriesFromLocalStorage, fetchStoriesFromNYTimes } from "../../api";
 
 const navItems = ["arts", "books", "fashion", "food", "movies", "travel"];
 
