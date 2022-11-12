@@ -20,7 +20,7 @@ html {
   box-sizing: inherit;
 }
 
-.site-wrap {
+/* .site-wrap {
   max-width: 940px;
   margin: 40px auto;
   background: white;
@@ -34,7 +34,7 @@ html {
   grid-template-areas:
     "sectionhead sectionhead"
     "entry entry";
-}
+} */
 
 header {
   height: 320px;
@@ -115,7 +115,7 @@ li.logo img {
   height: 2.5rem;
 }
 
-.section-head {
+/* .section-head {
   font-family: Lobster;
   color: #007eb6;
   font-size: 2.5rem;
@@ -124,7 +124,7 @@ li.logo img {
   margin-bottom: 1rem;
   border-bottom: 2px solid #007eb677;
   grid-area: sectionhead;
-}
+} */
 
 .loading {
   position: absolute;

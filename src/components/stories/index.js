@@ -1,14 +1,15 @@
 import React from "react";
 import Story from "../story";
+import { Wrapper, SectionHead } from "./styles";
 
 const Stories = ({ stories, section }) => {
   return (
-    <div className="site-wrap">
-      <h2 className="section-head">{section}</h2>
+    <Wrapper>
+      <SectionHead>{section}</SectionHead>
       {stories.map((story, index) => (
         <Story key={index} story={story} />
       ))}
-    </div>
+    </Wrapper>
   );
 };
 
