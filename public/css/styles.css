@@ -30,21 +30,6 @@ p {
   margin: 1rem 0;
 }
 
-nav {
-  background: #007eb6;
-  width: 100%;
-  transition: all 0.5s;
-  position: sticky;
-  top: 0;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 nav a {
   text-decoration: none;
   display: inline-block;
@@ -67,15 +52,6 @@ nav a:not(.active):hover {
 
 img {
   width: 100%;
-}
-
-li.logo {
-  overflow: hidden;
-}
-
-li.logo img {
-  width: 2.5rem;
-  height: 2.5rem;
 }
 
 .loading {
