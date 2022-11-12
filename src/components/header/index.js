@@ -1,10 +1,11 @@
 import React from "react";
+import { Wrapper, SiteTitle } from "./styles";
 
 const Header = ({siteTitle}) => {
   return (
-    <header>
-      <h1>{siteTitle}</h1>
-    </header>
+    <Wrapper>
+      <SiteTitle>{siteTitle}</SiteTitle>
+    </Wrapper>
   );
 };
 
