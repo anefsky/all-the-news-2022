@@ -1,5 +1,5 @@
 import React from "react";
-import NavItem from "./NavItem";
+import NavItem from "../navItem";
 
 const svgStyles = {
   fill: "white",

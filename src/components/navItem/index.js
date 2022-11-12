@@ -1,8 +1,8 @@
 import React from "react";
 
 const NavItem = ({navItem, setSection, section}) => {
-  const sendSection = (section) => {
-    setSection(section);
+  const sendSection = (theSection) => {
+    setSection(theSection);
   };
 
   return (

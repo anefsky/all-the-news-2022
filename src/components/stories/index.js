@@ -1,5 +1,5 @@
 import React from "react";
-import Story from "./story";
+import Story from "../story";
 
 const Stories = ({ stories, section }) => {
   return (
