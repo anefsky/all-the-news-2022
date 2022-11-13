@@ -50,10 +50,6 @@ nav a:not(.active):hover {
   background-color: #00aeef;
 }
 
-img {
-  width: 100%;
-}
-
 .loading {
   position: absolute;
   top: 0;
