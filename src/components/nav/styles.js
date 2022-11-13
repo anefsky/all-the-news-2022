@@ -24,4 +24,9 @@ export const LogoImg = styled.img`
     height: 2.5rem;
 `;
 
+export const Anchor = styled.a`
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+`;
+
 

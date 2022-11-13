@@ -1,6 +1,6 @@
 import React from "react";
 import NavItem from "../navItem";
-import { Wrapper, List, LogoItem, LogoImg } from "./styles";
+import { Wrapper, List, LogoItem, LogoImg, Anchor } from "./styles";
 
 const svgStyles = {
   fill: "white",
@@ -19,9 +19,9 @@ const Nav = ({navItems, setSection , section}) => {
     <Wrapper>
       <List>
         <LogoItem>
-          <a href="#top">
+          <Anchor href="#top">
             <Logo svgStyles={svgStyles} />
-          </a>
+          </Anchor>
         </LogoItem>
         {navItems.map((navItem, index) => (
           <NavItem

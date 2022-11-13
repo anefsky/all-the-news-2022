@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Anchor = styled.a`
     text-decoration: none;
-    display: inline-block;
     color: white;
     text-transform: capitalize;
     font-weight: 700;
