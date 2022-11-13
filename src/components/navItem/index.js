@@ -1,4 +1,5 @@
 import React from "react";
+import { Anchor } from "./styles";
 
 const NavItem = ({navItem, setSection, section}) => {
   const sendSection = (theSection) => {
@@ -7,13 +8,13 @@ const NavItem = ({navItem, setSection, section}) => {
 
   return (
     <li>
-      <a
+      <Anchor
         className={navItem === section ? "active" : ""}
         href={`#${navItem}`}
         onClick={() => sendSection(navItem)}
       >
         {navItem}
-      </a>
+      </Anchor>
     </li>
   );
 };
