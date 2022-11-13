@@ -26,10 +26,6 @@ html {
   }
 }
 
-p {
-  margin: 1rem 0;
-}
-
 nav a {
   text-decoration: none;
   display: inline-block;
