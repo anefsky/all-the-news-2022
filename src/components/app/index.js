@@ -3,6 +3,7 @@ import Header from "../header";
 import Nav from "../nav/";
 import Stories from "../stories";
 import Loader from "../loader";
+import { Content } from "./styles";
 import { fetchStoriesFromLocalStorage, fetchStoriesFromNYTimes } from "../../api";
 
 const navItems = ["arts", "books", "fashion", "food", "movies", "travel"];
@@ -37,11 +38,11 @@ function App() {
   return (
     <>
       {loading ? <Loader /> : null}
-      <div className={loading ? 'while-loading' : ''}>
+      <Content className={loading ? 'while-loading' : ''}>
         <Header siteTitle="All the News that Fits We Print" />
         <Nav navItems={navItems} setSection={setSection} section={section} />
         <Stories stories={stories} section={section} />
-      </div>
+      </Content>
     </>
   );
 }
