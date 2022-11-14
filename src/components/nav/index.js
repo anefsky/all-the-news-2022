@@ -19,7 +19,7 @@ const Nav = ({navItems, setSection , section}) => {
     <Wrapper>
       <List>
         <LogoItem>
-          <Anchor href="#top">
+          <Anchor href="#top" onClick={(()=>setSection([navItems[0]]))}>
             <Logo svgStyles={svgStyles} />
           </Anchor>
         </LogoItem>

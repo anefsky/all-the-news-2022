@@ -22,7 +22,7 @@ function App() {
       console.log(" hash::", hash);
       setSection(hash);
     } else {
-      setSection("arts");
+      setSection(navItems[0]);
     }
   }, []);
 
