@@ -1,5 +1,5 @@
 const fetchUrl = "https://api.nytimes.com/svc/topstories/v2/";
-const nytapi = "RuG9N6lD1Xss81PdRbmhuiJHjuiPEt6R";
+const nytapi = "i2FHN2hEpIDDiWNORGgF0ukGvNqKtqga";
 
 export async function fetchStoriesFromLocalStorage(section, setStories, stopLoading) {
   await setStories(JSON.parse(localStorage.getItem(section)));
