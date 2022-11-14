@@ -1,10 +1,11 @@
 import React from "react";
+import { Wrapper, Contents } from "./styles";
 
 const Loader = () => {
   return (
-    <div className="loading">
-        <div />
-    </div>
+    <Wrapper>
+        <Contents />
+    </Wrapper>
   );
 };
 
