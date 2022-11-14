@@ -1,10 +1,10 @@
 import React from "react";
 
-const Loader = ({show}) => {
+const Loader = () => {
   return (
-    <>
-        {show ? <h2>New loading...</h2> : ''}
-    </>
+    <div className="loading">
+        <div />
+    </div>
   );
 };
 

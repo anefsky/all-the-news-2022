@@ -26,6 +26,10 @@ html {
   }
 }
 
+.while-loading {
+  opacity: 30%;
+}
+
 .loading {
   position: absolute;
   top: 0;

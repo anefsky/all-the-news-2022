@@ -28,27 +28,20 @@ function App() {
   React.useEffect(() => {
     setLoading(true);
     if (!localStorage.getItem(section)) {
-      console.log('**** api call');
       fetchStoriesFromNYTimes(section, setStories, stopLoading);
     } else {
-      console.log('**** from local storage');
       fetchStoriesFromLocalStorage(section, setStories, stopLoading);
     }
-    // setTimeout(
-    //   stopLoading, 2000
-    // );
   }, [section]);
-
-  // if (loading) {
-  //   return <h2>Loading...</h2>;
-  // }
 
   return (
     <>
-      <Loader show={loading}/>
-      <Header siteTitle="All the News that Fits We Print" />
-      <Nav navItems={navItems} setSection={setSection} section={section} />
-      <Stories stories={stories} section={section} />
+      {loading ? <Loader /> : null}
+      <div className={loading ? 'while-loading' : ''}>
+        <Header siteTitle="All the News that Fits We Print" />
+        <Nav navItems={navItems} setSection={setSection} section={section} />
+        <Stories stories={stories} section={section} />
+      </div>
     </>
   );
 }
